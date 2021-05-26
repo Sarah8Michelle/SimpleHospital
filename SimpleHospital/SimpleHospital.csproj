@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-SimpleHospital-9FD75780-BE4A-46EE-AB8F-7ACE2AF7B9E7</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Report\**" />
+    <Content Remove="Report\**" />
+    <EmbeddedResource Remove="Report\**" />
+    <None Remove="Report\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Font.Awesome" Version="5.15.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Identity\Services\" />
+    <Folder Include="wwwroot\img\" />
+    <Folder Include="wwwroot\file\" />
+  </ItemGroup>
+
+</Project>

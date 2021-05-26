@@ -1,0 +1,30 @@
+﻿@model SimpleHospital.Models.CollaboratorType
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CollaboratorType</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CollaboratorTypes)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CollaboratorTypes)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Department)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Department)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.CollaboratorTypeId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
